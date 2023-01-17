@@ -8,11 +8,19 @@ const ingredients = [
 ];
 
 const list = document.getElementById("ingredients");
+const arrayList = [];
+let string = "";
 
 for (let i = 0; i < ingredients.length; i++) {
   const lastItem = document.createElement("li");
+
   lastItem.classList.add(".item");
+
   lastItem.textContent = ingredients[i];
-  list.append(lastItem);
+
+  arrayList.push(lastItem);
 }
-console.log(list);
+arrayList.forEach((element) => {
+  list.append(element);
+  console.log(element);
+});

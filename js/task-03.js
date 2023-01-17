@@ -15,14 +15,14 @@ const images = [
 
 
 const galleryEl = document.querySelector('.gallery');
-console.log(galleryEl);
+//console.log(galleryEl); 
 const imageEl = images.map(image => {
   return `<li class = "list"><img class="photo" src = ${image.url} width = "600" alt="${image.alt}"></img></li>`
 }).join("");
 console.log(imageEl);
 galleryEl.insertAdjacentHTML("beforeend", imageEl);
 
-const listEl = document.querySelectorAll(".list")
-console.log(listEl);
+//const listEl = document.querySelectorAll(".list")
+//console.log(listEl);
 
 
