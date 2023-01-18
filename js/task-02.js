@@ -7,7 +7,7 @@ const ingredients = [
   "Condiments",
 ];
 
-// const list = document.getElementById("ingredients");
+ const list = document.getElementById("ingredients");
 // const arrayList = [];
 // let string = "";
 
@@ -17,9 +17,11 @@ const ingredients = [
 //   lastItem.classList.add(".item");
 
 //   lastItem.textContent = ingredients[i];  
-//   //arrayList.push(lastItem);
+//   console.log(lastItem)
+//   arrayList.push(lastItem);
+// }
 
-// //list.append(arrayList);
+//list.append(arrayList)    //----виводить масив объєктів
 
 const listUl = document.getElementById("ingredients");
 
