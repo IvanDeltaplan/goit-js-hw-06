@@ -8,25 +8,28 @@ const ingredients = [
 ];
 
  const list = document.getElementById("ingredients");
-// const arrayList = [];
-// let string = "";
+const arrayList = [];
+let string = "";
 
-// for (let i = 0; i < ingredients.length; i++) {
-//   const lastItem = document.createElement("li");
+for (let i = 0; i < ingredients.length; i++) {
+  const lastItem = document.createElement("li");
 
-//   lastItem.classList.add(".item");
+  lastItem.classList.add(".item");
 
-//   lastItem.textContent = ingredients[i];  
-//   console.log(lastItem)
-//   arrayList.push(lastItem);
-// }
+  lastItem.textContent = ingredients[i];  
+  console.log(lastItem)
+  arrayList.push(lastItem);
 
-//list.append(arrayList)    //----виводить масив объєктів
+}
 
-const listUl = document.getElementById("ingredients");
+list.append(...arrayList)    //
 
-const ingridientsStr = ingredients.map(ingridient => {
-  return `<li class = "item">${ingridient}</li>`
-}).join("");
-console.log(ingridientsStr);
-listUl.insertAdjacentHTML("beforeend", ingridientsStr);
+// 2 variant
+
+// const listUl = document.getElementById("ingredients");
+
+// const ingridientsStr = ingredients.map(ingridient => {
+//   return `<li class = "item">${ingridient}</li>`
+// }).join("");
+// console.log(ingridientsStr);
+// listUl.insertAdjacentHTML("beforeend", ingridientsStr);
